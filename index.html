@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="login-screen">
+        <div class="login">
+                <h1>Chat</h1>
+                <img src="chat_icon.png" alt="">
+        </div>
+        <div class="container">
+            <div class="buttons">
+                <button id="login-btn">
+                    <img class="icon" src="facebook.ico" alt="">
+                </button>
+                <button>
+                    <img class="icon" src="twitter-icon.png" alt="">
+                </button>
+                <button>
+                    <img class="icon-github" src="github.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="text">
+            <p>Create account</p>
+            <p>Need Help ?</p>
+        </div>
+    </div>
+    <div id="chat-screen">
+      <div id="messages"></div>
+      <div class="input-container">
+          <input type="text" id="message-input">
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
