@@ -1,0 +1,57 @@
+#login-screen{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 4;
+}
+
+.image{
+    width: 20%;
+    max-width: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    background-color: white;
+    margin: 20px;
+}
+
+button{
+    display: flex;
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    height: 7rem;
+    width: 7rem;
+}
+
+.icon-github{
+    height: 6rem;
+    width: 10rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

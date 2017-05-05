@@ -8,6 +8,55 @@ body, html {
   font-family: sans-serif;
   height: 100%; }
 
+#login-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 4; }
+
+.image {
+  width: 20%;
+  max-width: 100px; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  background-color: white;
+  margin: 20px; }
+
+button {
+  display: flex;
+  border: none;
+  background: none;
+  justify-content: center;
+  align-items: center; }
+
+.icon {
+  height: 7rem;
+  width: 7rem; }
+
+.icon-github {
+  height: 6rem;
+  width: 10rem; }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none; }
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .input-container {
   background-color: #eee;
   padding: 10px;
@@ -31,51 +80,6 @@ input:hover {
 #message-input:focus {
   outline: none; }
 
-#login-screen {
-  height: 100vh;
-  display: flex;
-  flex-direction: column; }
-
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex: 4; }
-
-img {
-  width: 20%; }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  flex: 4;
-  background-color: white;
-  margin: 20px; }
-  .container button {
-    display: flex;
-    border: none;
-    background: none;
-    justify-content: center;
-    align-items: center; }
-  .container .icon {
-    height: 7rem;
-    width: 7rem; }
-  .container .icon-github {
-    height: 6rem;
-    width: 10rem; }
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  background: none;
-  border: none; }
-
-.text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
 #chat-screen {
   display: none;
   height: 100vh;
@@ -84,16 +88,23 @@ img {
 .chat {
   height: 90px; }
 
+.user-name {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: bold; }
+
 .message-container {
   padding: 7px 15px;
   display: flex;
-  position: relative; }
-
-.user-photo {
-  border-radius: 100%; }
+  position: relative;
+  background-color: white;
+  margin: 20px; }
 
 .message-container:last-of-type {
-  animation: new-message 300ms 50ms forwards; }
+  animation: new-message 300ms 50ms forwards;
+  background-color: white;
+  margin: 20px; }
 
 @keyframes new-message {
   0% {
